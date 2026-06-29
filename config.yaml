@@ -1,0 +1,35 @@
+# config.yaml
+# Run settings only. The test data lives in benchmark.json; this file is just
+# "how to run it," so you can change models or settings without touching code.
+# Any text after a # is a note for humans and is ignored when the code reads this.
+
+# The model lineup. Add or remove an entry to change who gets tested,
+# no code change needed. We run one model from each lab so we can compare
+# how two different models fail on the same questions.
+models:
+  - name: gpt              # short label used in results.json and the report
+    provider: openai
+    model: gpt-5.4         # current OpenAI flagship (gpt-4o was retired); confirm on your dashboard
+  - name: claude
+    provider: anthropic
+    model: claude-sonnet-4-6   # confirm on your Anthropic dashboard
+
+# How the models answer.
+generation:
+  temperature: 0           # honored by models that support it (e.g. Claude). Reasoning models
+                           # like GPT-5 lock temperature, so reproducibility there comes from the
+                           # committed results snapshot, not this setting.
+  max_tokens: 500          # plenty for a short labeled answer
+
+# What to do when a call fails or gets rate-limited (real networks are flaky).
+# The harness waits and retries instead of crashing the whole run.
+reliability:
+  max_retries: 4
+  backoff_seconds: 2       # wait grows each try: 2s, then 4s, then 8s...
+  timeout_seconds: 60      # give up on a single call after this long
+
+# Where files are read from and written to.
+paths:
+  benchmark: benchmark.json
+  results: results.json
+  report: report.md

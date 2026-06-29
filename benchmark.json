@@ -1,0 +1,141 @@
+{
+  "benchmark": "capture-content-eval",
+  "version": "0.1",
+  "task": "Given a text description of a photo, return the primary content type ('subject' = one clear focus, or 'scene' = no single focus) and the secondary labels present, each with a confidence from 0 to 1.",
+  "primary_rule": "Primary is decided by what the eye locks onto first. One spike of attention = subject. Attention spread flat = scene. Size only breaks ties.",
+  "label_rule": "A secondary label is included only if the description states or forces it. Labels are never inferred from what usually co-occurs.",
+  "primary_categories": ["subject", "scene"],
+  "label_menu": [
+    "animal", "people", "food", "beverage", "plant", "water",
+    "mountains", "sky", "vehicle", "sports", "furniture",
+    "instrument", "lights", "night", "indoors", "outdoors"
+  ],
+  "items": [
+    {
+      "id": "cap_01",
+      "description": "A golden retriever in sharp focus stands in a grassy field, with blurry mountains in the background.",
+      "primary": "subject",
+      "secondary": ["animal", "mountains", "plant", "outdoors"]
+    },
+    {
+      "id": "cap_02",
+      "description": "A plate of pasta with a fork beside it, lit by soft light from a nearby window.",
+      "primary": "subject",
+      "secondary": ["food", "indoors"]
+    },
+    {
+      "id": "cap_03",
+      "description": "A busy city street at night, neon signs glowing, a taxi in traffic, and a few people walking.",
+      "primary": "scene",
+      "secondary": ["people", "vehicle", "lights", "night", "outdoors"]
+    },
+    {
+      "id": "cap_04",
+      "description": "A lone surfer stands on a wide, nearly empty beach, the ocean stretching out behind.",
+      "primary": "subject",
+      "secondary": ["people", "water", "outdoors"]
+    },
+    {
+      "id": "cap_05",
+      "description": "A messy room with an unmade bed, a desk, a guitar, and filled shelves on a wooden floor.",
+      "primary": "scene",
+      "secondary": ["furniture", "instrument", "indoors"]
+    },
+    {
+      "id": "cap_06",
+      "description": "A red bicycle leaning against a plain wall.",
+      "primary": "subject",
+      "secondary": ["vehicle"]
+    },
+    {
+      "id": "cap_07",
+      "description": "Two friends sit across from each other at a cafe table, talking, both about equal size in the frame.",
+      "primary": "scene",
+      "secondary": ["people", "furniture"]
+    },
+    {
+      "id": "cap_08",
+      "description": "A vast savanna with a single small elephant far off in the distance.",
+      "primary": "subject",
+      "secondary": ["animal", "plant", "outdoors"],
+      "notes": "Tiny elephant, but it is the only thing the eye finds, so focus beats size: subject. Sky is left out because 'savanna' does not force it."
+    },
+    {
+      "id": "cap_09",
+      "description": "A holiday table crowded with many dishes filling the frame.",
+      "primary": "scene",
+      "secondary": ["food", "furniture"]
+    },
+    {
+      "id": "cap_10",
+      "description": "A green forest with one bright red tree standing out in the middle.",
+      "primary": "subject",
+      "secondary": ["plant", "outdoors"]
+    },
+    {
+      "id": "cap_11",
+      "description": "A soccer player mid-kick, with other players blurred in the background.",
+      "primary": "subject",
+      "secondary": ["people", "sports"],
+      "notes": "The player is the focus, so subject. No outdoors or plant: 'soccer' never states where it is played, so we do not infer it."
+    },
+    {
+      "id": "cap_12",
+      "description": "A crowded farmers market with stalls of produce and shoppers browsing.",
+      "primary": "scene",
+      "secondary": ["people", "food"]
+    },
+    {
+      "id": "cap_13",
+      "description": "A close-up of a single coffee cup with latte art, the cafe blurred behind it.",
+      "primary": "subject",
+      "secondary": ["beverage"]
+    },
+    {
+      "id": "cap_14",
+      "description": "A mountain lake at sunrise, the peaks reflected in the still water.",
+      "primary": "scene",
+      "secondary": ["water", "mountains", "sky", "outdoors"],
+      "notes": "Wide view with no single focus, so scene. Sky is included because 'sunrise' forces it: you cannot see a sunrise without sky."
+    },
+    {
+      "id": "cap_15",
+      "description": "A baby asleep in a crib under soft light, the nursery blurred behind.",
+      "primary": "subject",
+      "secondary": ["people", "furniture", "indoors"]
+    },
+    {
+      "id": "cap_16",
+      "description": "Three street musicians on a corner with a guitar and drums, people stopped to watch.",
+      "primary": "scene",
+      "secondary": ["people", "instrument", "outdoors"],
+      "notes": "A group with no single point the eye lands on, so scene, even though the musicians are what the photo is 'about.' Outdoors because 'street' forces it."
+    },
+    {
+      "id": "cap_17",
+      "description": "A lone saxophone player under a single spotlight, the stage dark all around.",
+      "primary": "subject",
+      "secondary": ["people", "instrument", "lights", "night"],
+      "notes": "One lit figure against a dark stage pulls the eye to one spot, so subject. Same ingredients as cap_16, opposite call."
+    },
+    {
+      "id": "cap_18",
+      "description": "A surfer riding a big wave, spray flying, water filling the frame.",
+      "primary": "subject",
+      "secondary": ["people", "sports", "water"],
+      "notes": "Water fills the frame, but the surfer is the lock, so subject. No outdoors: a wave does not force it, since indoor wave pools exist."
+    },
+    {
+      "id": "cap_19",
+      "description": "A city skyline at night with many lit windows, no single building standing out.",
+      "primary": "scene",
+      "secondary": ["lights", "night", "outdoors"]
+    },
+    {
+      "id": "cap_20",
+      "description": "A swimming pool full of kids playing with floats, splashing in the water.",
+      "primary": "scene",
+      "secondary": ["people", "water", "sports"]
+    }
+  ]
+}

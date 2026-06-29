@@ -1,0 +1,1152 @@
+[
+  {
+    "model": "gpt",
+    "id": "cap_01",
+    "gold_primary": "subject",
+    "gold_secondary": [
+      "animal",
+      "mountains",
+      "plant",
+      "outdoors"
+    ],
+    "predicted": {
+      "ok": true,
+      "primary": "subject",
+      "secondary": [
+        {
+          "label": "animal",
+          "confidence": 1.0
+        },
+        {
+          "label": "plant",
+          "confidence": 0.96
+        },
+        {
+          "label": "mountains",
+          "confidence": 0.98
+        },
+        {
+          "label": "outdoors",
+          "confidence": 0.99
+        }
+      ],
+      "raw": "{\"primary\":\"subject\",\"secondary\":[{\"label\":\"animal\",\"confidence\":1.0},{\"label\":\"plant\",\"confidence\":0.96},{\"label\":\"mountains\",\"confidence\":0.98},{\"label\":\"outdoors\",\"confidence\":0.99}]}"
+    }
+  },
+  {
+    "model": "gpt",
+    "id": "cap_02",
+    "gold_primary": "subject",
+    "gold_secondary": [
+      "food",
+      "indoors"
+    ],
+    "predicted": {
+      "ok": true,
+      "primary": "subject",
+      "secondary": [
+        {
+          "label": "food",
+          "confidence": 0.99
+        },
+        {
+          "label": "indoors",
+          "confidence": 0.82
+        }
+      ],
+      "raw": "{\"primary\":\"subject\",\"secondary\":[{\"label\":\"food\",\"confidence\":0.99},{\"label\":\"indoors\",\"confidence\":0.82}]}"
+    }
+  },
+  {
+    "model": "gpt",
+    "id": "cap_03",
+    "gold_primary": "scene",
+    "gold_secondary": [
+      "people",
+      "vehicle",
+      "lights",
+      "night",
+      "outdoors"
+    ],
+    "predicted": {
+      "ok": true,
+      "primary": "scene",
+      "secondary": [
+        {
+          "label": "people",
+          "confidence": 0.92
+        },
+        {
+          "label": "vehicle",
+          "confidence": 0.97
+        },
+        {
+          "label": "lights",
+          "confidence": 0.96
+        },
+        {
+          "label": "night",
+          "confidence": 0.99
+        },
+        {
+          "label": "outdoors",
+          "confidence": 0.98
+        }
+      ],
+      "raw": "{\"primary\":\"scene\",\"secondary\":[{\"label\":\"people\",\"confidence\":0.92},{\"label\":\"vehicle\",\"confidence\":0.97},{\"label\":\"lights\",\"confidence\":0.96},{\"label\":\"night\",\"confidence\":0.99},{\"label\":\"outdoors\",\"confidence\":0.98}]}"
+    }
+  },
+  {
+    "model": "gpt",
+    "id": "cap_04",
+    "gold_primary": "subject",
+    "gold_secondary": [
+      "people",
+      "water",
+      "outdoors"
+    ],
+    "predicted": {
+      "ok": true,
+      "primary": "subject",
+      "secondary": [
+        {
+          "label": "people",
+          "confidence": 0.99
+        },
+        {
+          "label": "water",
+          "confidence": 0.99
+        },
+        {
+          "label": "sports",
+          "confidence": 0.96
+        },
+        {
+          "label": "outdoors",
+          "confidence": 0.98
+        }
+      ],
+      "raw": "{\"primary\":\"subject\",\"secondary\":[{\"label\":\"people\",\"confidence\":0.99},{\"label\":\"water\",\"confidence\":0.99},{\"label\":\"sports\",\"confidence\":0.96},{\"label\":\"outdoors\",\"confidence\":0.98}]}"
+    }
+  },
+  {
+    "model": "gpt",
+    "id": "cap_05",
+    "gold_primary": "scene",
+    "gold_secondary": [
+      "furniture",
+      "instrument",
+      "indoors"
+    ],
+    "predicted": {
+      "ok": true,
+      "primary": "scene",
+      "secondary": [
+        {
+          "label": "furniture",
+          "confidence": 0.99
+        },
+        {
+          "label": "instrument",
+          "confidence": 0.98
+        },
+        {
+          "label": "indoors",
+          "confidence": 0.99
+        }
+      ],
+      "raw": "{\"primary\":\"scene\",\"secondary\":[{\"label\":\"furniture\",\"confidence\":0.99},{\"label\":\"instrument\",\"confidence\":0.98},{\"label\":\"indoors\",\"confidence\":0.99}]}"
+    }
+  },
+  {
+    "model": "gpt",
+    "id": "cap_06",
+    "gold_primary": "subject",
+    "gold_secondary": [
+      "vehicle"
+    ],
+    "predicted": {
+      "ok": true,
+      "primary": "subject",
+      "secondary": [
+        {
+          "label": "vehicle",
+          "confidence": 0.99
+        }
+      ],
+      "raw": "{\"primary\":\"subject\",\"secondary\":[{\"label\":\"vehicle\",\"confidence\":0.99}]}"
+    }
+  },
+  {
+    "model": "gpt",
+    "id": "cap_07",
+    "gold_primary": "scene",
+    "gold_secondary": [
+      "people",
+      "furniture"
+    ],
+    "predicted": {
+      "ok": true,
+      "primary": "scene",
+      "secondary": [
+        {
+          "label": "people",
+          "confidence": 1.0
+        },
+        {
+          "label": "furniture",
+          "confidence": 0.95
+        }
+      ],
+      "raw": "{\"primary\": \"scene\", \"secondary\": [{\"label\": \"people\", \"confidence\": 1.0}, {\"label\": \"furniture\", \"confidence\": 0.95}]}"
+    }
+  },
+  {
+    "model": "gpt",
+    "id": "cap_08",
+    "gold_primary": "subject",
+    "gold_secondary": [
+      "animal",
+      "plant",
+      "outdoors"
+    ],
+    "predicted": {
+      "ok": true,
+      "primary": "scene",
+      "secondary": [
+        {
+          "label": "animal",
+          "confidence": 0.99
+        },
+        {
+          "label": "plant",
+          "confidence": 0.76
+        },
+        {
+          "label": "outdoors",
+          "confidence": 0.98
+        }
+      ],
+      "raw": "{\"primary\":\"scene\",\"secondary\":[{\"label\":\"animal\",\"confidence\":0.99},{\"label\":\"plant\",\"confidence\":0.76},{\"label\":\"outdoors\",\"confidence\":0.98}]}"
+    }
+  },
+  {
+    "model": "gpt",
+    "id": "cap_09",
+    "gold_primary": "scene",
+    "gold_secondary": [
+      "food",
+      "furniture"
+    ],
+    "predicted": {
+      "ok": true,
+      "primary": "scene",
+      "secondary": [
+        {
+          "label": "food",
+          "confidence": 0.99
+        },
+        {
+          "label": "furniture",
+          "confidence": 0.95
+        }
+      ],
+      "raw": "{\"primary\":\"scene\",\"secondary\":[{\"label\":\"food\",\"confidence\":0.99},{\"label\":\"furniture\",\"confidence\":0.95}]}"
+    }
+  },
+  {
+    "model": "gpt",
+    "id": "cap_10",
+    "gold_primary": "subject",
+    "gold_secondary": [
+      "plant",
+      "outdoors"
+    ],
+    "predicted": {
+      "ok": true,
+      "primary": "subject",
+      "secondary": [
+        {
+          "label": "plant",
+          "confidence": 1.0
+        },
+        {
+          "label": "outdoors",
+          "confidence": 1.0
+        }
+      ],
+      "raw": "{\"primary\":\"subject\",\"secondary\":[{\"label\":\"plant\",\"confidence\":1.0},{\"label\":\"outdoors\",\"confidence\":1.0}]}"
+    }
+  },
+  {
+    "model": "gpt",
+    "id": "cap_11",
+    "gold_primary": "subject",
+    "gold_secondary": [
+      "people",
+      "sports"
+    ],
+    "predicted": {
+      "ok": true,
+      "primary": "subject",
+      "secondary": [
+        {
+          "label": "people",
+          "confidence": 1.0
+        },
+        {
+          "label": "sports",
+          "confidence": 1.0
+        }
+      ],
+      "raw": "{\"primary\":\"subject\",\"secondary\":[{\"label\":\"people\",\"confidence\":1.0},{\"label\":\"sports\",\"confidence\":1.0}]}"
+    }
+  },
+  {
+    "model": "gpt",
+    "id": "cap_12",
+    "gold_primary": "scene",
+    "gold_secondary": [
+      "people",
+      "food"
+    ],
+    "predicted": {
+      "ok": true,
+      "primary": "scene",
+      "secondary": [
+        {
+          "label": "people",
+          "confidence": 0.98
+        },
+        {
+          "label": "food",
+          "confidence": 0.96
+        }
+      ],
+      "raw": "{\"primary\": \"scene\", \"secondary\": [{\"label\": \"people\", \"confidence\": 0.98}, {\"label\": \"food\", \"confidence\": 0.96}]}"
+    }
+  },
+  {
+    "model": "gpt",
+    "id": "cap_13",
+    "gold_primary": "subject",
+    "gold_secondary": [
+      "beverage"
+    ],
+    "predicted": {
+      "ok": true,
+      "primary": "subject",
+      "secondary": [
+        {
+          "label": "beverage",
+          "confidence": 0.99
+        }
+      ],
+      "raw": "{\"primary\":\"subject\",\"secondary\":[{\"label\":\"beverage\",\"confidence\":0.99}]}"
+    }
+  },
+  {
+    "model": "gpt",
+    "id": "cap_14",
+    "gold_primary": "scene",
+    "gold_secondary": [
+      "water",
+      "mountains",
+      "sky",
+      "outdoors"
+    ],
+    "predicted": {
+      "ok": true,
+      "primary": "scene",
+      "secondary": [
+        {
+          "label": "water",
+          "confidence": 1
+        },
+        {
+          "label": "mountains",
+          "confidence": 1
+        },
+        {
+          "label": "sky",
+          "confidence": 1
+        },
+        {
+          "label": "outdoors",
+          "confidence": 1
+        }
+      ],
+      "raw": "{\"primary\":\"scene\",\"secondary\":[{\"label\":\"water\",\"confidence\":1},{\"label\":\"mountains\",\"confidence\":1},{\"label\":\"sky\",\"confidence\":1},{\"label\":\"outdoors\",\"confidence\":1}]}"
+    }
+  },
+  {
+    "model": "gpt",
+    "id": "cap_15",
+    "gold_primary": "subject",
+    "gold_secondary": [
+      "people",
+      "furniture",
+      "indoors"
+    ],
+    "predicted": {
+      "ok": true,
+      "primary": "subject",
+      "secondary": [
+        {
+          "label": "people",
+          "confidence": 0.99
+        },
+        {
+          "label": "furniture",
+          "confidence": 0.95
+        },
+        {
+          "label": "lights",
+          "confidence": 0.83
+        },
+        {
+          "label": "indoors",
+          "confidence": 0.98
+        }
+      ],
+      "raw": "{\"primary\":\"subject\",\"secondary\":[{\"label\":\"people\",\"confidence\":0.99},{\"label\":\"furniture\",\"confidence\":0.95},{\"label\":\"lights\",\"confidence\":0.83},{\"label\":\"indoors\",\"confidence\":0.98}]}"
+    }
+  },
+  {
+    "model": "gpt",
+    "id": "cap_16",
+    "gold_primary": "scene",
+    "gold_secondary": [
+      "people",
+      "instrument",
+      "outdoors"
+    ],
+    "predicted": {
+      "ok": true,
+      "primary": "scene",
+      "secondary": [
+        {
+          "label": "people",
+          "confidence": 0.99
+        },
+        {
+          "label": "instrument",
+          "confidence": 0.99
+        },
+        {
+          "label": "outdoors",
+          "confidence": 0.97
+        }
+      ],
+      "raw": "{\"primary\":\"scene\",\"secondary\":[{\"label\":\"people\",\"confidence\":0.99},{\"label\":\"instrument\",\"confidence\":0.99},{\"label\":\"outdoors\",\"confidence\":0.97}]}"
+    }
+  },
+  {
+    "model": "gpt",
+    "id": "cap_17",
+    "gold_primary": "subject",
+    "gold_secondary": [
+      "people",
+      "instrument",
+      "lights",
+      "night"
+    ],
+    "predicted": {
+      "ok": true,
+      "primary": "subject",
+      "secondary": [
+        {
+          "label": "people",
+          "confidence": 0.98
+        },
+        {
+          "label": "instrument",
+          "confidence": 0.99
+        },
+        {
+          "label": "lights",
+          "confidence": 0.97
+        }
+      ],
+      "raw": "{\"primary\":\"subject\",\"secondary\":[{\"label\":\"people\",\"confidence\":0.98},{\"label\":\"instrument\",\"confidence\":0.99},{\"label\":\"lights\",\"confidence\":0.97}]}"
+    }
+  },
+  {
+    "model": "gpt",
+    "id": "cap_18",
+    "gold_primary": "subject",
+    "gold_secondary": [
+      "people",
+      "sports",
+      "water"
+    ],
+    "predicted": {
+      "ok": true,
+      "primary": "subject",
+      "secondary": [
+        {
+          "label": "people",
+          "confidence": 0.98
+        },
+        {
+          "label": "water",
+          "confidence": 1.0
+        },
+        {
+          "label": "sports",
+          "confidence": 0.97
+        }
+      ],
+      "raw": "{\"primary\":\"subject\",\"secondary\":[{\"label\":\"people\",\"confidence\":0.98},{\"label\":\"water\",\"confidence\":1.0},{\"label\":\"sports\",\"confidence\":0.97}]}"
+    }
+  },
+  {
+    "model": "gpt",
+    "id": "cap_19",
+    "gold_primary": "scene",
+    "gold_secondary": [
+      "lights",
+      "night",
+      "outdoors"
+    ],
+    "predicted": {
+      "ok": true,
+      "primary": "scene",
+      "secondary": [
+        {
+          "label": "lights",
+          "confidence": 0.99
+        },
+        {
+          "label": "night",
+          "confidence": 1.0
+        },
+        {
+          "label": "sky",
+          "confidence": 0.78
+        }
+      ],
+      "raw": "{\"primary\":\"scene\",\"secondary\":[{\"label\":\"lights\",\"confidence\":0.99},{\"label\":\"night\",\"confidence\":1.0},{\"label\":\"sky\",\"confidence\":0.78}]}"
+    }
+  },
+  {
+    "model": "gpt",
+    "id": "cap_20",
+    "gold_primary": "scene",
+    "gold_secondary": [
+      "people",
+      "water",
+      "sports"
+    ],
+    "predicted": {
+      "ok": true,
+      "primary": "scene",
+      "secondary": [
+        {
+          "label": "people",
+          "confidence": 1.0
+        },
+        {
+          "label": "water",
+          "confidence": 1.0
+        }
+      ],
+      "raw": "{\"primary\": \"scene\", \"secondary\": [{\"label\": \"people\", \"confidence\": 1.0}, {\"label\": \"water\", \"confidence\": 1.0}]}"
+    }
+  },
+  {
+    "model": "claude",
+    "id": "cap_01",
+    "gold_primary": "subject",
+    "gold_secondary": [
+      "animal",
+      "mountains",
+      "plant",
+      "outdoors"
+    ],
+    "predicted": {
+      "ok": true,
+      "primary": "subject",
+      "secondary": [
+        {
+          "label": "animal",
+          "confidence": 1.0
+        },
+        {
+          "label": "plant",
+          "confidence": 1.0
+        },
+        {
+          "label": "mountains",
+          "confidence": 1.0
+        },
+        {
+          "label": "outdoors",
+          "confidence": 1.0
+        }
+      ],
+      "raw": "{\"primary\": \"subject\", \"secondary\": [{\"label\": \"animal\", \"confidence\": 1.0}, {\"label\": \"plant\", \"confidence\": 1.0}, {\"label\": \"mountains\", \"confidence\": 1.0}, {\"label\": \"outdoors\", \"confidence\": 1.0}]}"
+    }
+  },
+  {
+    "model": "claude",
+    "id": "cap_02",
+    "gold_primary": "subject",
+    "gold_secondary": [
+      "food",
+      "indoors"
+    ],
+    "predicted": {
+      "ok": true,
+      "primary": "subject",
+      "secondary": [
+        {
+          "label": "food",
+          "confidence": 1.0
+        },
+        {
+          "label": "lights",
+          "confidence": 0.7
+        },
+        {
+          "label": "indoors",
+          "confidence": 0.85
+        }
+      ],
+      "raw": "{\"primary\": \"subject\", \"secondary\": [{\"label\": \"food\", \"confidence\": 1.0}, {\"label\": \"lights\", \"confidence\": 0.7}, {\"label\": \"indoors\", \"confidence\": 0.85}]}"
+    }
+  },
+  {
+    "model": "claude",
+    "id": "cap_03",
+    "gold_primary": "scene",
+    "gold_secondary": [
+      "people",
+      "vehicle",
+      "lights",
+      "night",
+      "outdoors"
+    ],
+    "predicted": {
+      "ok": true,
+      "primary": "scene",
+      "secondary": [
+        {
+          "label": "people",
+          "confidence": 0.9
+        },
+        {
+          "label": "vehicle",
+          "confidence": 0.95
+        },
+        {
+          "label": "lights",
+          "confidence": 0.95
+        },
+        {
+          "label": "night",
+          "confidence": 1.0
+        },
+        {
+          "label": "outdoors",
+          "confidence": 1.0
+        }
+      ],
+      "raw": "{\"primary\": \"scene\", \"secondary\": [{\"label\": \"people\", \"confidence\": 0.9}, {\"label\": \"vehicle\", \"confidence\": 0.95}, {\"label\": \"lights\", \"confidence\": 0.95}, {\"label\": \"night\", \"confidence\": 1.0}, {\"label\": \"outdoors\", \"confidence\": 1.0}]}"
+    }
+  },
+  {
+    "model": "claude",
+    "id": "cap_04",
+    "gold_primary": "subject",
+    "gold_secondary": [
+      "people",
+      "water",
+      "outdoors"
+    ],
+    "predicted": {
+      "ok": true,
+      "primary": "subject",
+      "secondary": [
+        {
+          "label": "people",
+          "confidence": 1.0
+        },
+        {
+          "label": "water",
+          "confidence": 1.0
+        },
+        {
+          "label": "outdoors",
+          "confidence": 1.0
+        },
+        {
+          "label": "sports",
+          "confidence": 0.7
+        }
+      ],
+      "raw": "{\"primary\": \"subject\", \"secondary\": [{\"label\": \"people\", \"confidence\": 1.0}, {\"label\": \"water\", \"confidence\": 1.0}, {\"label\": \"outdoors\", \"confidence\": 1.0}, {\"label\": \"sports\", \"confidence\": 0.7}]}"
+    }
+  },
+  {
+    "model": "claude",
+    "id": "cap_05",
+    "gold_primary": "scene",
+    "gold_secondary": [
+      "furniture",
+      "instrument",
+      "indoors"
+    ],
+    "predicted": {
+      "ok": true,
+      "primary": "scene",
+      "secondary": [
+        {
+          "label": "furniture",
+          "confidence": 1.0
+        },
+        {
+          "label": "instrument",
+          "confidence": 1.0
+        },
+        {
+          "label": "indoors",
+          "confidence": 1.0
+        }
+      ],
+      "raw": "{\"primary\": \"scene\", \"secondary\": [{\"label\": \"furniture\", \"confidence\": 1.0}, {\"label\": \"instrument\", \"confidence\": 1.0}, {\"label\": \"indoors\", \"confidence\": 1.0}]}"
+    }
+  },
+  {
+    "model": "claude",
+    "id": "cap_06",
+    "gold_primary": "subject",
+    "gold_secondary": [
+      "vehicle"
+    ],
+    "predicted": {
+      "ok": true,
+      "primary": "subject",
+      "secondary": [
+        {
+          "label": "vehicle",
+          "confidence": 1.0
+        }
+      ],
+      "raw": "{\"primary\": \"subject\", \"secondary\": [{\"label\": \"vehicle\", \"confidence\": 1.0}]}"
+    }
+  },
+  {
+    "model": "claude",
+    "id": "cap_07",
+    "gold_primary": "scene",
+    "gold_secondary": [
+      "people",
+      "furniture"
+    ],
+    "predicted": {
+      "ok": true,
+      "primary": "scene",
+      "secondary": [
+        {
+          "label": "people",
+          "confidence": 1.0
+        },
+        {
+          "label": "furniture",
+          "confidence": 1.0
+        },
+        {
+          "label": "indoors",
+          "confidence": 0.9
+        }
+      ],
+      "raw": "{\"primary\": \"scene\", \"secondary\": [{\"label\": \"people\", \"confidence\": 1.0}, {\"label\": \"furniture\", \"confidence\": 1.0}, {\"label\": \"indoors\", \"confidence\": 0.9}]}"
+    }
+  },
+  {
+    "model": "claude",
+    "id": "cap_08",
+    "gold_primary": "subject",
+    "gold_secondary": [
+      "animal",
+      "plant",
+      "outdoors"
+    ],
+    "predicted": {
+      "ok": true,
+      "primary": "subject",
+      "secondary": [
+        {
+          "label": "animal",
+          "confidence": 0.97
+        },
+        {
+          "label": "plant",
+          "confidence": 0.7
+        },
+        {
+          "label": "outdoors",
+          "confidence": 0.95
+        }
+      ],
+      "raw": "{\"primary\": \"subject\", \"secondary\": [{\"label\": \"animal\", \"confidence\": 0.97}, {\"label\": \"plant\", \"confidence\": 0.7}, {\"label\": \"outdoors\", \"confidence\": 0.95}]}"
+    }
+  },
+  {
+    "model": "claude",
+    "id": "cap_09",
+    "gold_primary": "scene",
+    "gold_secondary": [
+      "food",
+      "furniture"
+    ],
+    "predicted": {
+      "ok": true,
+      "primary": "scene",
+      "secondary": [
+        {
+          "label": "food",
+          "confidence": 1.0
+        },
+        {
+          "label": "furniture",
+          "confidence": 0.85
+        },
+        {
+          "label": "indoors",
+          "confidence": 0.9
+        }
+      ],
+      "raw": "{\"primary\": \"scene\", \"secondary\": [{\"label\": \"food\", \"confidence\": 1.0}, {\"label\": \"furniture\", \"confidence\": 0.85}, {\"label\": \"indoors\", \"confidence\": 0.9}]}"
+    }
+  },
+  {
+    "model": "claude",
+    "id": "cap_10",
+    "gold_primary": "subject",
+    "gold_secondary": [
+      "plant",
+      "outdoors"
+    ],
+    "predicted": {
+      "ok": true,
+      "primary": "subject",
+      "secondary": [
+        {
+          "label": "plant",
+          "confidence": 1.0
+        },
+        {
+          "label": "outdoors",
+          "confidence": 0.95
+        }
+      ],
+      "raw": "{\"primary\": \"subject\", \"secondary\": [{\"label\": \"plant\", \"confidence\": 1.0}, {\"label\": \"outdoors\", \"confidence\": 0.95}]}"
+    }
+  },
+  {
+    "model": "claude",
+    "id": "cap_11",
+    "gold_primary": "subject",
+    "gold_secondary": [
+      "people",
+      "sports"
+    ],
+    "predicted": {
+      "ok": true,
+      "primary": "subject",
+      "secondary": [
+        {
+          "label": "people",
+          "confidence": 1.0
+        },
+        {
+          "label": "sports",
+          "confidence": 1.0
+        }
+      ],
+      "raw": "{\"primary\": \"subject\", \"secondary\": [{\"label\": \"people\", \"confidence\": 1.0}, {\"label\": \"sports\", \"confidence\": 1.0}]}"
+    }
+  },
+  {
+    "model": "claude",
+    "id": "cap_12",
+    "gold_primary": "scene",
+    "gold_secondary": [
+      "people",
+      "food"
+    ],
+    "predicted": {
+      "ok": true,
+      "primary": "scene",
+      "secondary": [
+        {
+          "label": "people",
+          "confidence": 1.0
+        },
+        {
+          "label": "food",
+          "confidence": 1.0
+        },
+        {
+          "label": "plant",
+          "confidence": 0.8
+        },
+        {
+          "label": "outdoors",
+          "confidence": 0.85
+        }
+      ],
+      "raw": "{\"primary\": \"scene\", \"secondary\": [{\"label\": \"people\", \"confidence\": 1.0}, {\"label\": \"food\", \"confidence\": 1.0}, {\"label\": \"plant\", \"confidence\": 0.8}, {\"label\": \"outdoors\", \"confidence\": 0.85}]}"
+    }
+  },
+  {
+    "model": "claude",
+    "id": "cap_13",
+    "gold_primary": "subject",
+    "gold_secondary": [
+      "beverage"
+    ],
+    "predicted": {
+      "ok": true,
+      "primary": "subject",
+      "secondary": [
+        {
+          "label": "beverage",
+          "confidence": 1.0
+        },
+        {
+          "label": "indoors",
+          "confidence": 0.9
+        }
+      ],
+      "raw": "{\"primary\": \"subject\", \"secondary\": [{\"label\": \"beverage\", \"confidence\": 1.0}, {\"label\": \"indoors\", \"confidence\": 0.9}]}"
+    }
+  },
+  {
+    "model": "claude",
+    "id": "cap_14",
+    "gold_primary": "scene",
+    "gold_secondary": [
+      "water",
+      "mountains",
+      "sky",
+      "outdoors"
+    ],
+    "predicted": {
+      "ok": true,
+      "primary": "scene",
+      "secondary": [
+        {
+          "label": "water",
+          "confidence": 1.0
+        },
+        {
+          "label": "mountains",
+          "confidence": 1.0
+        },
+        {
+          "label": "sky",
+          "confidence": 1.0
+        },
+        {
+          "label": "outdoors",
+          "confidence": 1.0
+        }
+      ],
+      "raw": "{\"primary\": \"scene\", \"secondary\": [{\"label\": \"water\", \"confidence\": 1.0}, {\"label\": \"mountains\", \"confidence\": 1.0}, {\"label\": \"sky\", \"confidence\": 1.0}, {\"label\": \"outdoors\", \"confidence\": 1.0}]}"
+    }
+  },
+  {
+    "model": "claude",
+    "id": "cap_15",
+    "gold_primary": "subject",
+    "gold_secondary": [
+      "people",
+      "furniture",
+      "indoors"
+    ],
+    "predicted": {
+      "ok": true,
+      "primary": "subject",
+      "secondary": [
+        {
+          "label": "people",
+          "confidence": 0.95
+        },
+        {
+          "label": "furniture",
+          "confidence": 0.95
+        },
+        {
+          "label": "lights",
+          "confidence": 0.8
+        },
+        {
+          "label": "indoors",
+          "confidence": 0.95
+        }
+      ],
+      "raw": "{\"primary\": \"subject\", \"secondary\": [{\"label\": \"people\", \"confidence\": 0.95}, {\"label\": \"furniture\", \"confidence\": 0.95}, {\"label\": \"lights\", \"confidence\": 0.8}, {\"label\": \"indoors\", \"confidence\": 0.95}]}"
+    }
+  },
+  {
+    "model": "claude",
+    "id": "cap_16",
+    "gold_primary": "scene",
+    "gold_secondary": [
+      "people",
+      "instrument",
+      "outdoors"
+    ],
+    "predicted": {
+      "ok": true,
+      "primary": "scene",
+      "secondary": [
+        {
+          "label": "people",
+          "confidence": 1.0
+        },
+        {
+          "label": "instrument",
+          "confidence": 1.0
+        },
+        {
+          "label": "outdoors",
+          "confidence": 1.0
+        }
+      ],
+      "raw": "{\"primary\": \"scene\", \"secondary\": [{\"label\": \"people\", \"confidence\": 1.0}, {\"label\": \"instrument\", \"confidence\": 1.0}, {\"label\": \"outdoors\", \"confidence\": 1.0}]}"
+    }
+  },
+  {
+    "model": "claude",
+    "id": "cap_17",
+    "gold_primary": "subject",
+    "gold_secondary": [
+      "people",
+      "instrument",
+      "lights",
+      "night"
+    ],
+    "predicted": {
+      "ok": true,
+      "primary": "subject",
+      "secondary": [
+        {
+          "label": "people",
+          "confidence": 1.0
+        },
+        {
+          "label": "instrument",
+          "confidence": 1.0
+        },
+        {
+          "label": "lights",
+          "confidence": 1.0
+        },
+        {
+          "label": "indoors",
+          "confidence": 0.9
+        }
+      ],
+      "raw": "{\"primary\": \"subject\", \"secondary\": [{\"label\": \"people\", \"confidence\": 1.0}, {\"label\": \"instrument\", \"confidence\": 1.0}, {\"label\": \"lights\", \"confidence\": 1.0}, {\"label\": \"indoors\", \"confidence\": 0.9}]}"
+    }
+  },
+  {
+    "model": "claude",
+    "id": "cap_18",
+    "gold_primary": "subject",
+    "gold_secondary": [
+      "people",
+      "sports",
+      "water"
+    ],
+    "predicted": {
+      "ok": true,
+      "primary": "subject",
+      "secondary": [
+        {
+          "label": "people",
+          "confidence": 0.97
+        },
+        {
+          "label": "water",
+          "confidence": 0.99
+        },
+        {
+          "label": "sports",
+          "confidence": 0.97
+        },
+        {
+          "label": "outdoors",
+          "confidence": 0.95
+        }
+      ],
+      "raw": "{\"primary\": \"subject\", \"secondary\": [{\"label\": \"people\", \"confidence\": 0.97}, {\"label\": \"water\", \"confidence\": 0.99}, {\"label\": \"sports\", \"confidence\": 0.97}, {\"label\": \"outdoors\", \"confidence\": 0.95}]}"
+    }
+  },
+  {
+    "model": "claude",
+    "id": "cap_19",
+    "gold_primary": "scene",
+    "gold_secondary": [
+      "lights",
+      "night",
+      "outdoors"
+    ],
+    "predicted": {
+      "ok": true,
+      "primary": "scene",
+      "secondary": [
+        {
+          "label": "lights",
+          "confidence": 1.0
+        },
+        {
+          "label": "night",
+          "confidence": 1.0
+        },
+        {
+          "label": "outdoors",
+          "confidence": 1.0
+        },
+        {
+          "label": "sky",
+          "confidence": 0.9
+        }
+      ],
+      "raw": "{\"primary\": \"scene\", \"secondary\": [{\"label\": \"lights\", \"confidence\": 1.0}, {\"label\": \"night\", \"confidence\": 1.0}, {\"label\": \"outdoors\", \"confidence\": 1.0}, {\"label\": \"sky\", \"confidence\": 0.9}]}"
+    }
+  },
+  {
+    "model": "claude",
+    "id": "cap_20",
+    "gold_primary": "scene",
+    "gold_secondary": [
+      "people",
+      "water",
+      "sports"
+    ],
+    "predicted": {
+      "ok": true,
+      "primary": "scene",
+      "secondary": [
+        {
+          "label": "people",
+          "confidence": 1.0
+        },
+        {
+          "label": "water",
+          "confidence": 1.0
+        },
+        {
+          "label": "sports",
+          "confidence": 0.6
+        }
+      ],
+      "raw": "{\"primary\": \"scene\", \"secondary\": [{\"label\": \"people\", \"confidence\": 1.0}, {\"label\": \"water\", \"confidence\": 1.0}, {\"label\": \"sports\", \"confidence\": 0.6}]}"
+    }
+  }
+]
