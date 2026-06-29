@@ -46,15 +46,23 @@ It's a small, hand-built set of 20 items, made to get the mechanics right and to
 
 ## Running it
 
+You don't need to run anything to see the results. results.json and report.md are committed, so just open report.md.
+
+To reproduce it yourself:
+
 ```bash
+git clone https://github.com/shreyagxpta/capture-content-eval.git
+cd capture-content-eval
 pip install -r requirements.txt
-export OPENAI_API_KEY=...
+export OPENAI_API_KEY=...      # your own keys, billed to your account
 export ANTHROPIC_API_KEY=...
-python evaluate.py --real     # hits the live models, writes results.json
-python score.py               # prints the scores, writes report.md
+python evaluate.py --real      # hits the live models, writes results.json
+python score.py                # prints the scores, writes report.md
 ```
 
-Without `--real` it runs against a mock instead, so you can test the whole thing with no keys and no cost. Models and settings live in `config.yaml`, not in the code.
+Without `--real` it runs against a mock instead, so you can test the whole pipeline with no keys and no cost. Models and settings live in `config.yaml`, not in the code.
+
+Your numbers won't be exactly the same as mine, and that's expected with live models (GPT-5 also locks temperature so you can't fully pin it), which is why the results are committed as a snapshot.
 
 ## Files
 
