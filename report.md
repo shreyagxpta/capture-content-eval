@@ -20,4 +20,4 @@ Frontier models label capture metadata from a text description: a primary type (
 
 ## Takeaway
 
-Both models land close on the headline (F1 95% for gpt, 90% for claude), but fail in opposite directions: gpt splits errors evenly (3 over-claims, 3 confident), while claude over-claims labels (1 misses, 0 wrong primaries). Same score, opposite deployment risk.
+Both models score high (F1 95% for gpt, 90% for claude), but trade off differently: gpt's main weakness is 3 over-claiming, 3 of them confident (Brier 0.042); claude's main weakness is 11 over-claiming, 9 of them confident (Brier 0.127). Lower Brier means confidence you can trust unattended.

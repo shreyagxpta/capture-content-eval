@@ -111,28 +111,34 @@ def failure_profile(results, confident_threshold=0.75):
 
 
 def takeaway_line(groups, profiles):
-    """Build a one-line summary comparing how the two models fail."""
+    """Build a one-line summary naming each model's dominant failure."""
     names = list(groups)
     if len(names) != 2:
         return "See the failure profile above for how each model fails."
+
+    def describe(name):
+        p = profiles[name]
+        brier = brier_score(groups[name])
+        # the dominant failure is whichever count is highest
+        worst_type, worst_count = max(
+            [("over-claiming", p["over_claims"]),
+             ("missing real labels", p["misses"]),
+             ("wrong primaries", p["wrong_primary"])],
+            key=lambda pair: pair[1],
+        )
+        if worst_count == 0:
+            return f"{name} makes almost no errors (Brier {brier:.3f})"
+        note = f"{worst_count} {worst_type}"
+        if worst_type == "over-claiming" and p["confident_over_claims"] > 0:
+            note += f", {p['confident_over_claims']} of them confident"
+        return f"{name}'s main weakness is {note} (Brier {brier:.3f})"
+
     a, b = names
-    f1_a = average_label_scores(groups[a])[2]
-    f1_b = average_label_scores(groups[b])[2]
-
-    def shape(p):
-        if p["over_claims"] > p["misses"]:
-            return "over-claims labels"
-        if p["misses"] > p["over_claims"]:
-            return "misses real labels"
-        return "splits errors evenly"
-
+    fa = average_label_scores(groups[a])[2]
+    fb = average_label_scores(groups[b])[2]
     return (
-        f"Both models land close on the headline (F1 {f1_a:.0%} for {a}, {f1_b:.0%} for {b}), "
-        f"but fail in opposite directions: {a} {shape(profiles[a])} "
-        f"({profiles[a]['over_claims']} over-claims, {profiles[a]['confident_over_claims']} confident), "
-        f"while {b} {shape(profiles[b])} "
-        f"({profiles[b]['misses']} misses, {profiles[b]['wrong_primary']} wrong primaries). "
-        f"Same score, opposite deployment risk."
+        f"Both models score high (F1 {fa:.0%} for {a}, {fb:.0%} for {b}), but trade off differently: "
+        f"{describe(a)}; {describe(b)}. Lower Brier means confidence you can trust unattended."
     )
 
 
